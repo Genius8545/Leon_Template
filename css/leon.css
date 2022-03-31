@@ -52,7 +52,7 @@ ul {
     color: #ebeced;
     font-size: 100px;
     text-align: center;
-    margin: 0px;
+    margin: 0;
     letter-spacing: -3px;
     font-weight: 800;
 
@@ -75,7 +75,7 @@ ul {
 /* end components */
 /* start header */
 header{
-padding: 20px;
+    padding: 20px;
 }
 header .container{
     display: flex;
@@ -123,19 +123,18 @@ header .links ul{
     position: absolute;
     right: 0;
     min-width: 200px;
-    top: calc(100% + 15px);
+    top: calc(100% + 21px);
     display: none;
     z-index: 1;
-
 }
 header .links ul::before{
     content: "";
-    border-width: 10px;
+    border-width: 20px;
     border-style: solid;
     border-color: transparent transparent #cfbdbd26 transparent;
     position: absolute;
-    right: 5px;
-    top: -20px;
+    right: 0px;
+    top: -40px;
 }
 header .links:hover ul{
     display: block;
@@ -158,9 +157,10 @@ header .links ul li:not(:last-child) a {
 /* End header */
 /* start landing */
 .landing{
-    background:url('../images/landing.jpg') ;
+    background-image:url('../images/landing.jpg') ;
     background-size: cover;
     height: calc(100vh - 64px);
+    position: relative;
 }
 .landing .intro-text {
     position:absolute;
@@ -284,7 +284,7 @@ margin: 0 0 20px;
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap:30px ;
+    grid-gap: 30px ;
     margin-top: 80px;
    
 }
@@ -302,19 +302,18 @@ margin: 0 0 20px;
 }
 .portfolio .portfolio-content .text h3{
     margin: 0 ;
-    }
+}
 .portfolio .portfolio-content .text p{
-        color: #444;
-        font-weight: 300;
-        line-height: 1.8;
-    }
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
 
     /*end Portfolio */
     /* start about */
 .about{
    padding-top: var(--section-padding);
-   padding-bottom: calc(var(--section-padding) + 60px);;
-    
+   padding-bottom: calc(var(--section-padding) + 60px);
 }
 
 .about .about-content{
@@ -428,7 +427,7 @@ margin: 0 0 20px;
 @media (max-width: 767px) {
     .contact .info .label,
     .contact .info .link {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 /* end contact */
